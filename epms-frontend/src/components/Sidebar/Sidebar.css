@@ -1,0 +1,85 @@
+/* --- SIDEBAR HEADER --- */
+/* Styling for the header area inside the drawer */
+.sidebar-header {
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    border-bottom: 1px solid #EEEEEE;
+    /* Subtle Divider */
+}
+
+/* Override the default MUI blue color for the title */
+.sidebar-header .MuiTypography-root {
+    color: #333333 !important;
+    /* Dark Gray for Title Text */
+    font-weight: 600 !important;
+}
+
+
+/* --- NAVIGATION LIST ITEMS --- */
+
+/* 1. Default/Hover Styles (Targeting the custom class on ListItemButton) */
+.sidebar-list-item {
+    transition: all 0.2s ease !important;
+    color: #555555 !important;
+    transition: 0.25s ease;
+    cursor: pointer;
+    /* Default Text Color */
+}
+
+.sidebar-list-item:hover {
+    background-color: #F8F8F8 !important;
+    /* Light background on hover */
+    color: #214848 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    /* Teal text color on hover */
+}
+
+/* 2. Overriding MUI Icon Colors (The Blue Squares) */
+.sidebar-list-item .MuiListItemIcon-root {
+    /* Set default icon color (same as text) */
+    color: #555555 !important;
+    min-width: 40px;
+    /* Ensures spacing is kept */
+}
+
+.sidebar-list-item:hover .MuiListItemIcon-root {
+    /* Set teal color on hover */
+    color: #214848 !important;
+}
+
+/* 3. ACTIVE STATE (MUI's internal class for selected/focused item) */
+/* We need to apply the accent color to the *active* item's text and icon */
+/* Since you are not explicitly setting the 'selected' prop on ListItem, 
+   we will assume the logic will handle the active state via a custom class or the hover state */
+
+/* If you want an active state, you must add className="sidebar-list-item active" 
+   to the selected item in the renderItem function in Sidebar.js */
+
+.sidebar-list-item.active {
+    background-color: #F0F8F8 !important;
+    /* Light Teal background for active */
+    color: #214848 !important;
+    /* Teal text for active */
+    border-right: 3px solid #214848;
+    /* Accent bar */
+}
+
+.sidebar-list-item.active .MuiListItemIcon-root {
+    color: #214848 !important;
+    /* Teal icon for active */
+}
+
+/* 4. Close Button */
+.sidebar-header .MuiIconButton-root {
+    color: #999999;
+    /* Muted gray for the close button */
+}
+
+.sidebar-header .MuiIconButton-root:hover {
+    color: #333333;
+    /* Darker gray on hover */
+}

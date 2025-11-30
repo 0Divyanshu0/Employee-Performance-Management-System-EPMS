@@ -1,0 +1,98 @@
+/* Styles for DashboardAndTeamView.js
+  (KPI Grid & Team Table)
+*/
+
+/* ------------------------
+   KPI grid (2 columns)
+   ------------------------ */
+.kpi-overview-manager {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0 30px;
+}
+
+@media (max-width: 900px) {
+    .kpi-overview-manager {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ------------------------
+   Team table
+   ------------------------ */
+.team-table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.team-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: separate;
+    border-spacing:0 10px;
+    table-layout: auto;
+}
+
+.team-table th,
+.team-table td {
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #f4f5f7;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.team-table thead th {
+    background: #fafafa;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
+
+.team-table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.01);
+}
+
+/* Center-align specific columns */
+.team-table th:nth-child(3),
+.team-table td:nth-child(3),
+.team-table th:nth-child(4),
+.team-table td:nth-child(4),
+.team-table th:nth-child(5),
+.team-table td:nth-child(5),
+.team-table th:nth-child(6),
+.team-table td:nth-child(6) {
+    text-align: center;
+}
+
+/* Small cell helpers */
+.team-table td small {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Action buttons container */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Table */
+@media (max-width: 700px) {
+
+    .team-table th,
+    .team-table td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+}

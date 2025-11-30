@@ -1,0 +1,102 @@
+/* Base styles applied to all buttons */
+.button-component {
+
+    display: inline-flex;
+    /* Enables Flexbox */
+    align-items: center;
+    /* Vertically centers icon and text */
+    justify-content: center;
+    /* Horizontally centers content */
+    gap: 8px;
+    /* Adds space between icon and text */
+
+    /* Base classes: rounded-xl font-semibold transition duration-300 */
+    border-radius: 0.75rem;
+    /* rounded-xl (Tailwind default) */
+    font-weight: 600;
+    /* font-semibold */
+    transition-property: all;
+    /* transition */
+    transition-duration: 300ms;
+    /* duration-300 */
+    border: none;
+    /* Good practice for buttons */
+    cursor: pointer;
+}
+
+/* --- Size Classes (Base Padding and Text Size) --- */
+
+/* Size: sm (px-3 py-2 text-sm) */
+.button--primary-sm,
+.button--secondary-sm,
+.button--danger-sm {
+    padding: 0.5rem 0.75rem;
+    /* py-2 px-3 */
+    font-size: 0.875rem;
+    /* text-sm */
+}
+
+/* Size: md (px-4 py-2 text-base) */
+.button--primary-md,
+.button--secondary-md,
+.button--danger-md {
+    padding: 0.5rem 1rem;
+    /* py-2 px-4 */
+    font-size: 1rem;
+    /* text-base */
+}
+
+/* Size: lg (px-6 py-3 text-lg) */
+.button--primary-lg,
+.button--secondary-lg,
+.button--danger-lg {
+    padding: 0.75rem 1.5rem;
+    /* py-3 px-6 */
+    font-size: 1.125rem;
+    /* text-lg */
+}
+
+
+/* --- Color Classes (Background, Text, and Hover) --- */
+
+/* Color: primary (bg-[#006666] text-[#E2E1D0] hover:bg-[#004d4d]) */
+.button--primary-sm,
+.button--primary-md,
+.button--primary-lg {
+    background-color: #066;
+    color: #E2E1D0;
+}
+
+.button--primary-sm:hover,
+.button--primary-md:hover,
+.button--primary-lg:hover {
+    background-color: #004d4d;
+}
+
+/* Color: secondary (bg-[#E2E1D0] text-[#006666] hover:bg-[#d4d3a8]) */
+.button--secondary-sm,
+.button--secondary-md,
+.button--secondary-lg {
+    background-color: #E2E1D0;
+    color: #006666;
+}
+
+.button--secondary-sm:hover,
+.button--secondary-md:hover,
+.button--secondary-lg:hover {
+    background-color: #d4d3a8;
+}
+
+/* Color: danger (bg-[#800000] text-white hover:bg-[#a00000]) */
+.button--danger-sm,
+.button--danger-md,
+.button--danger-lg {
+    background-color: #800000;
+    color: white;
+}
+
+.button--danger-sm:hover,
+.button--danger-md:hover,
+.button--danger-lg:hover {
+    background-color: #a00000;
+}

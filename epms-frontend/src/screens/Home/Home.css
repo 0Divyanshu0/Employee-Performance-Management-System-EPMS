@@ -1,0 +1,87 @@
+/* 
+  Converted Tailwind classes for the main container:
+  - min-h-screen -> min-height: 100vh;
+  - bg-[#E2E1D0] -> background-color: #E2E1D0;
+  - flex flex-col items-center justify-center -> display: flex; flex-direction: column; align-items: center; justify-content: center;
+  - p-6          -> padding: 1.5rem;
+*/
+.home-container {
+    min-height: 100vh;
+    background-color: #E2E1D0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem; /* p-6 */
+    /* Ensure the container is big enough to hold the box on all screens */
+    box-sizing: border-box; 
+}
+
+
+/* 
+  Converted Tailwind classes for the inner content box:
+  - bg-white        -> background-color: white;
+  - p-10            -> padding: 2.5rem;
+  - rounded-3xl     -> border-radius: 1.5rem;
+  - shadow-2xl      -> box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); (Approximate Tailwind default)
+  - w-full max-w-lg -> width: 100%; max-width: 32rem; (Tailwind default for max-w-lg)
+  - border border-[#D8CBCB] -> border: 1px solid #D8CBCB;
+*/
+.home-content-box {
+    background-color: white;
+    padding: 2.5rem; /* p-10 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    /* Simple approximation of shadow-2xl */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 32rem; /* max-w-lg */
+    border: 1px solid #D8CBCB;
+}
+
+/* 
+  Converted Tailwind classes for the title:
+  - text-4xl      -> font-size: 2.25rem; line-height: 2.5rem;
+  - font-extrabold -> font-weight: 800;
+  - text-[#006666] -> color: #006666;
+  - mb-6          -> margin-bottom: 1.5rem;
+  - text-center   -> text-align: center;
+*/
+.home-title {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 2.5rem;
+    font-weight: 800; /* font-extrabold */
+    color: #006666;
+    margin-bottom: 1.5rem; /* mb-6 */
+    text-align: center;
+}
+
+/* 
+  Converted Tailwind classes for the role text paragraph:
+  - text-lg       -> font-size: 1.125rem; line-height: 1.75rem;
+  - text-[#333]   -> color: #333;
+  - mb-4          -> margin-bottom: 1rem;
+  - text-center   -> text-align: center;
+*/
+.home-role-text {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem; /* mb-4 */
+    text-align: center;
+}
+
+/* 
+  Converted Tailwind classes for the role span:
+  - font-semibold -> font-weight: 600;
+  - text-xl       -> font-size: 1.25rem; line-height: 1.75rem;
+*/
+.home-role-span {
+    font-weight: 600; /* font-semibold */
+    font-size: 1.25rem; /* text-xl */
+    line-height: 1.75rem;
+}
+
+.home-logout-button {
+    width: 100%;
+    margin-top: 2rem; /* mt-8 */
+}

@@ -1,0 +1,74 @@
+.kpi-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.kpi-card__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+}
+
+.kpi-card__icon {
+  /* Set a fixed size on the container to ensure layout stability */
+  width: 24px;
+  /* Default MUI Icon size for 'medium' */
+  height: 24px;
+  /* The color property on the container will pass down to the SVG fill property */
+  color: #3e82f7;
+  /* Default Blue */
+}
+
+/* Specific styling for the third card's content */
+.kpi-card:nth-child(3) .kpi-card__icon {
+  /* This overrides the default blue for the third card */
+  color: #5cb85c;
+  /* Green/Success */
+}
+
+.kpi-card__content-main {
+  font-size: 24px;
+  font-weight: 700;
+  color: #066;
+  margin: 0 0 5px 0;
+  line-height: 1;
+}
+
+.kpi-card__content-details {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+/* Specific style for the score increase */
+.kpi-card:nth-child(1) .kpi-card__content-details {
+  color: #5cb85c;
+  /* Green */
+  font-weight: 500;
+}
+
+/* Specific style for the feedback links */
+.kpi-card:nth-child(3) .kpi-card__content-main {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.kpi-card:nth-child(3) .kpi-card__content-details {
+  color: #3e82f7;
+  /* Blue link style */
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 5px;
+}

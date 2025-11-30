@@ -1,0 +1,129 @@
+/* Styles for GoalManagementView.js
+  (Accordion & Goal List)
+*/
+
+/* This rule makes the Goal Management page (and only that page)
+   scrollable within the main content area, so the Header never moves.
+*/
+.team-overview-section#goal-management {
+    /* Calculates the max height: 
+    100vh (full screen)
+    - 64px (approx header height)
+    - 60px (top/bottom padding of .manager-dashboard-content)
+    - 20px (extra buffer)
+  */
+    max-height: calc(100vh - 144px);
+    overflow-y: auto;
+}
+
+/* ------------------------
+NEW: Goal Management Accordion
+------------------------ */
+
+.employee-goal-group {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    /* Contains the border-radius */
+}
+
+.employee-goal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent-600);
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.employee-goal-header:hover {
+    background: #fcfcfc;
+}
+
+.accordion-arrow {
+    font-size: 14px;
+    color: var(--muted);
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-arrow.open {
+    transform: rotate(180deg);
+}
+
+/* The list inside the accordion */
+.manager-goals-list {
+    margin-top: 0;
+    background: #fdfdfd;
+    padding: 15px;
+}
+
+/* The goal items inside the list */
+.manager-goal-item {
+    border: none;
+    /* Removing double border */
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #f1f3f5;
+    margin-bottom: 8px;
+}
+
+/* --- UPDATED: New Progress Bar Styles --- */
+.goal-progress-bar-container {
+    background-color: #e6e9eb;
+    /* Light grey track */
+    border-radius: 999px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.goal-progress-bar-fill {
+    height: 100%;
+    background-color: var(--accent);
+    /* UPDATED: Blue/Teal theme color */
+    border-radius: 999px;
+    transition: width 0.4s ease-in-out;
+}
+
+.goal-progress-text {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.manager-goal-item .goal-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+.goal-title strong {
+    display: block;
+    font-size: 15px;
+    color: #222;
+}
+
+.goal-assigned small {
+    display: block;
+    margin-top: 6px;
+    color: #666;
+    font-size: 13px;
+}
+
+
+.manager-goal-item .goal-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}

@@ -1,0 +1,166 @@
+/* ---------------------------------------
+   PAGE LAYOUT
+----------------------------------------*/
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.admin-content {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.admin-title {
+  color: #066;
+  font-size: 28px;
+  line-height: 1.05;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+/* ---------------------------------------
+   USER MANAGEMENT HEADER
+----------------------------------------*/
+.user-management-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------------------
+   USER TABLE
+----------------------------------------*/
+.user-table-wrapper {
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: white;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+  background-color: #f1f3f5;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.table-header {
+  font-size: 18px;
+}
+
+/* Make header sticky */
+.user-table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  background: #f1f3f5;
+  z-index: 10;
+}
+
+/* Action column alignment */
+.action-col {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+/* ---------------------------------------
+   MODAL
+----------------------------------------*/
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 420px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: popup 0.25s ease-out;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------------------------------------
+   FORM
+----------------------------------------*/
+.user-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.user-form input,
+.user-form select {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Modal buttons use global Button component */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Utility text styles */
+.center-text {
+  text-align: center;
+  color: #555;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: 500;
+}

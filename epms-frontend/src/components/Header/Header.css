@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom,
+      #f4fbfb,
+      #eef9f9,
+      #e8f6f6);
+}
+
+.header__title {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.header__menu-icon {
+  color: #4a5568;
+}
+
+
+.header__menu-icon {
+  color: #4a5568;
+}
+
+/* LEFT Section */
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Menu Icon Animation */
+.header__menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #3c3c3c;
+  transition: all 0.25s ease;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.header__menu-icon:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(3px) scale(1.1);
+  box-shadow: 0 2px 6px rgba(150, 150, 255, 0.3);
+}
+
+/* TITLE */
+.header__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  letter-spacing: 0.3px;
+  transition: 0.3s ease;
+}
+
+.header__title:hover {
+  color: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* RIGHT side */
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+
+/* Notification Badge */
+.header__badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.3);
+  animation: badgePulse 2s infinite;
+}
+
+/* Floating badge pulse effect */
+@keyframes badgePulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

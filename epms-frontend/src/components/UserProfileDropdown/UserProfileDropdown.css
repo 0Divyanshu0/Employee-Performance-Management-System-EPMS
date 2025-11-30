@@ -1,0 +1,66 @@
+/* Container for the dropdown and its trigger */
+.user-profile-dropdown-container {
+    /* Ensures the trigger is properly contained */
+    display: flex;
+    align-items: center;
+}
+
+/* The clickable area (Avatar + Name/Role) */
+.profile-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0; /* Add padding for a better click target */
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.profile-trigger:hover {
+    background-color: #f5f5f5; /* Light hover effect */
+}
+
+/* Avatar styling */
+.profile-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #3e82f7; /* Blue */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevents avatar from shrinking */
+}
+
+/* Name and Role text container */
+.profile-info {
+    line-height: 1.2;
+    text-align: left;
+    /* This makes sure the text remains readable and doesn't wrap oddly */
+    white-space: nowrap; 
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.profile-role {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Custom styling for the Logout MenuItem (Red color from screenshot) */
+.logout-menu-item {
+    color: #d9534f !important; /* Red text */
+    font-weight: 500 !important;
+}
+
+/* Target the icon inside the logout item to make it red too */
+.logout-menu-item .MuiSvgIcon-root {
+    color: #d9534f !important; /* Red icon */
+}

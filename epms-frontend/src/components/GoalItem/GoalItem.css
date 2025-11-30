@@ -1,0 +1,63 @@
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.goal-item:last-child {
+  border-bottom: none;
+}
+
+.goal-item__info {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.goal-item__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 5px 0;
+}
+
+.goal-item__progress-bar-container {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.goal-item__progress-bar {
+  height: 100%;
+  background-color: #000; /* Black progress bar */
+  transition: width 0.4s ease-in-out;
+}
+
+.goal-item__percentage {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.goal-item__status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.goal-item__status--in-progress {
+  background-color: #e6f7ff; /* Light blue */
+  color: #1890ff; /* Blue text */
+  background-color: #f0f0f0; /* Use light grey for In Progress as per image */
+  color: #ffb020;
+}
+
+.goal-item__status--completed {
+  background-color: #d8f5e7; /* Light green */
+  color: #4a906e; /* Dark green text */
+}

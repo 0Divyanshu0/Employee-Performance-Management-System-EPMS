@@ -1,0 +1,33 @@
+.hr-chart-wrapper {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.hr-chart-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.export-btn {
+    background: #006666;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hr-chart-inner-wrapper {
+    position: relative;
+    height: 300px;
+}

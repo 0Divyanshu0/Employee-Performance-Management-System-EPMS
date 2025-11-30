@@ -1,0 +1,8 @@
+.label-component {
+    display: block;
+    color: #666666;
+    font-weight: 600; /* semibold */
+    margin-bottom: 0.5rem; /* mb-2 */
+    font-size: 0.875rem; /* text-sm */
+    letter-spacing: 0.025em; /* tracking-wide */
+}
