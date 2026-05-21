@@ -137,12 +137,6 @@ npm start
 
 ---
 
-## 📸 Screenshots
-
-_Add screenshots of your application here (Dashboard, Login, Reports, etc.)_
-
----
-
 ## 📈 Future Enhancements
 
 - Exportable reports  
@@ -164,12 +158,6 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 ## 🙌 Acknowledgements
 
 - Inspired by real-world performance management systems  
@@ -179,10 +167,8 @@ This project is licensed under the MIT License.
 
 ## 💡 Author
 
-**Your Name**  
-GitHub: https://github.com/your-username  
-LinkedIn: https://linkedin.com/in/your-profile  
-
+**Divyanshu Srivastava**  
+GitHub: https://github.com/0Divyanshu0/
 ---
 
 ⭐ If you like this project, give it a star!
